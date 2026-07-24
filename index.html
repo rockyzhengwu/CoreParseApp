@@ -10,12 +10,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://coreparse.app/">
     <meta property="og:image" content="https://coreparse.app/assets/preview-document.jpg">
+    <meta name="apple-itunes-app" content="app-id=6786576853">
     <link rel="canonical" href="https://coreparse.app/">
     <link rel="stylesheet" href="/styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KEMFD8HF68"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KEMFD8HF68');
+    </script>
   </head>
   <body>
-    <header class="site-header">
-      <nav class="nav" aria-label="Main navigation">
+    <header class="site-header nav-pill-shell">
+      <nav class="nav nav-pill" aria-label="Main navigation">
         <a class="brand" href="/" aria-label="CoreParse home">
           <span class="brand-mark" aria-hidden="true">
             <svg width="17" height="17" viewBox="0 0 20 20" fill="none">
@@ -28,8 +38,9 @@
         </a>
         <div class="nav-links">
           <a class="optional" href="#features">Features</a>
+          <a class="optional" href="#workflow">Workflow</a>
           <a href="/support/">Support</a>
-          <a class="button primary disabled" href="#" aria-disabled="true">Coming soon</a>
+          <a class="button primary nav-cta" href="https://apps.apple.com/app/id6786576853?mt=12">Download</a>
         </div>
       </nav>
     </header>
@@ -37,26 +48,33 @@
     <main>
       <section class="hero">
         <div class="hero-inner">
-          <p class="eyebrow reveal">On-device OCR for macOS</p>
-          <h1 class="reveal delay-1">CoreParse</h1>
-          <p class="hero-copy reveal delay-2">Local document intelligence for PDFs and images. Extract text, tables, and formulas on your Mac without uploading documents to the cloud.</p>
-          <div class="hero-actions reveal delay-2">
-            <a class="button primary disabled" href="#" aria-disabled="true">Download on the App Store</a>
-            <a class="button" href="#features">See what it extracts</a>
+          <div class="hero-copyblock">
+            <p class="eyebrow reveal">Mac OCR workbench</p>
+            <h1 class="reveal delay-1">Parse documents where they live.</h1>
+            <p class="hero-copy reveal delay-2">CoreParse extracts text, tables, and formulas on your Mac. No document upload, no cloud workspace, no subscription.</p>
+            <div class="hero-actions reveal delay-2">
+              <a class="button primary" href="https://apps.apple.com/app/id6786576853?mt=12">Download on the App Store</a>
+              <a class="button secondary" href="#workflow">View workflow</a>
+            </div>
+            <p class="hero-note reveal delay-2">10 free analysis pages each month. One-time purchase for full access.</p>
           </div>
-          <p class="hero-note reveal delay-2">10 free analysis pages each month. One-time purchase for full access.</p>
-          <div class="hero-visual" aria-label="CoreParse document analysis interface">
-            <img src="/assets/preview-document.jpg" alt="CoreParse analyzing a scanned academic document with OCR results side by side">
-          </div>
+          <figure class="hero-visual annotated-figure" aria-label="CoreParse document analysis interface">
+            <img src="/assets/preview-document.jpg" width="2560" height="1600" fetchpriority="high" alt="CoreParse analyzing a scanned academic document with OCR results side by side">
+            <figcaption>
+              <span>Local page analysis</span>
+              <span>Reviewed beside the original scan</span>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
       <section id="features" class="section">
         <div class="section-inner">
-          <p class="section-kicker">What it keeps</p>
-          <h2 class="section-title">More than plain text extraction.</h2>
-          <p class="section-copy">CoreParse is built for documents where layout matters: research papers, reports, scans, screenshots, invoices, tables, and technical pages.</p>
-          <div class="proof-row" aria-label="CoreParse capabilities">
+          <div class="section-head">
+            <h2 class="section-title">Built for documents where layout matters.</h2>
+            <p class="section-copy">Research papers, reports, scans, screenshots, invoices, tables, and technical pages stay inspectable before export.</p>
+          </div>
+          <div class="proof-row spec-strip" aria-label="CoreParse capabilities">
             <div class="proof-item">
               <strong>Text and layout</strong>
               <span>Review recognized content against the original page before exporting.</span>
@@ -76,7 +94,6 @@
       <section class="section">
         <div class="section-inner feature-split">
           <div>
-            <p class="section-kicker">Tables</p>
             <h2 class="section-title">Turn dense tables into reusable structure.</h2>
             <p class="section-copy">Inspect detected cells visually, then export the table you need without sending the source document anywhere.</p>
             <ul class="feature-list">
@@ -86,7 +103,7 @@
             </ul>
           </div>
           <figure class="media-frame">
-            <img src="/assets/preview-table.jpg" alt="CoreParse showing recognized table cells on a PDF page">
+            <img src="/assets/preview-table.jpg" width="2560" height="1600" loading="lazy" alt="CoreParse showing recognized table cells on a PDF page">
           </figure>
         </div>
       </section>
@@ -94,10 +111,9 @@
       <section class="section">
         <div class="section-inner feature-split">
           <figure class="media-frame">
-            <img src="/assets/preview-formula.jpg" alt="CoreParse recognizing formulas in a technical document">
+            <img src="/assets/preview-formula.jpg" width="2560" height="1600" loading="lazy" alt="CoreParse recognizing formulas in a technical document">
           </figure>
           <div>
-            <p class="section-kicker">Technical documents</p>
             <h2 class="section-title">Keep formulas visible in the workflow.</h2>
             <p class="section-copy">Formula recognition is optional, so everyday OCR stays lean while technical documents can preserve mathematical content when needed.</p>
             <ul class="feature-list">
@@ -109,29 +125,30 @@
         </div>
       </section>
 
-      <section class="section">
+      <section id="workflow" class="section workflow-section">
         <div class="section-inner">
-          <p class="section-kicker">Workflow</p>
-          <h2 class="section-title">A local library for documents you keep coming back to.</h2>
-          <p class="section-copy">Import files, analyze pages, review results, and export only what you need. Documents and OCR results stay on this Mac.</p>
-          <div class="workflow">
-            <div class="workflow-step">
+          <div class="section-head">
+            <h2 class="section-title">A local library for documents you keep coming back to.</h2>
+            <p class="section-copy">Import files, analyze pages, review results, and export only what you need. Documents and OCR results stay on this Mac.</p>
+          </div>
+          <ol class="workflow">
+            <li class="workflow-step">
               <span>01</span>
               <h3>Open a PDF or image</h3>
               <p>Work with local files and scans without setting up a cloud workspace.</p>
-            </div>
-            <div class="workflow-step">
+            </li>
+            <li class="workflow-step">
               <span>02</span>
               <h3>Analyze on-device</h3>
               <p>Run OCR, layout, tables, and optional formulas using downloaded local models.</p>
-            </div>
-            <div class="workflow-step">
+            </li>
+            <li class="workflow-step">
               <span>03</span>
               <h3>Export results</h3>
               <p>Export Markdown or individual tables for documents, notes, and spreadsheets.</p>
-            </div>
-          </div>
-          <figure class="media-frame" style="margin-top: 46px;">
+            </li>
+          </ol>
+          <figure class="media-frame video-frame">
             <video src="/assets/coreparse-preview.mov" poster="/assets/preview-library.jpg" muted playsinline controls preload="metadata"></video>
           </figure>
         </div>
@@ -139,18 +156,18 @@
 
       <section class="final-cta">
         <div class="section-inner">
-          <p class="section-kicker">Pricing</p>
           <h2 class="section-title">Start with 10 free pages every month.</h2>
           <p class="section-copy">Full access is a one-time purchase. No subscription. Unlock analysis beyond the monthly free pages and project batch export.</p>
-          <a class="button primary disabled" href="#" aria-disabled="true">App Store release coming soon</a>
+          <a class="button primary" href="https://apps.apple.com/app/id6786576853?mt=12">Download on the App Store</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <span>© 2026 CoreParse. All rights reserved.</span>
+        <p class="footer-statement">Documents stay local. Structure comes out.</p>
         <div class="footer-links">
+          <span>© 2026 CoreParse</span>
           <a href="/support/">Support</a>
           <a href="/privacy/">Privacy</a>
           <a href="mailto:support@coreparse.app">Contact</a>

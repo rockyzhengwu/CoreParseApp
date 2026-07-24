@@ -1,0 +1,73 @@
+/* Hallmark tokens · CoreParseApp · genre: modern-minimal · theme: Cobalt */
+:root {
+  color-scheme: light;
+
+  --color-paper: oklch(97.5% 0.008 248);
+  --color-paper-2: oklch(94.5% 0.012 248);
+  --color-paper-3: oklch(90.5% 0.014 248);
+  --color-surface: oklch(99% 0.006 248);
+  --color-ink: oklch(18% 0.018 252);
+  --color-ink-2: oklch(38% 0.024 252);
+  --color-muted: oklch(55% 0.024 252);
+  --color-rule: oklch(84% 0.018 248);
+  --color-rule-strong: oklch(73% 0.028 248);
+  --color-accent: oklch(55% 0.19 255);
+  --color-accent-ink: oklch(98% 0.006 248);
+  --color-focus: oklch(60% 0.2 255);
+  --color-success: oklch(58% 0.17 152);
+  --color-inverse: oklch(17% 0.018 252);
+  --color-inverse-ink: oklch(95% 0.012 248);
+  --color-shadow: oklch(20% 0.02 252 / 0.12);
+
+  --font-display: "Space Grotesk", "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Geist", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.375rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.25rem;
+  --text-3xl: 3rem;
+  --text-display: clamp(3.2rem, 6.2vw, 5.25rem);
+
+  --leading-tight: 0.96;
+  --leading-title: 1.05;
+  --leading-copy: 1.55;
+
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  --rule-hair: 1px;
+  --max: 1180px;
+  --narrow: 860px;
+  --page-gutter: clamp(1rem, 4vw, 2rem);
+  --page-gutter-total: 2rem;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --z-base: 1;
+  --z-sticky: 200;
+}

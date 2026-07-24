@@ -14,4 +14,7 @@ URLs for App Store Connect:
 - Support URL: `https://coreparse.app/support/`
 - Privacy Policy URL: `https://coreparse.app/privacy/`
 
-Replace the placeholder App Store links in `index.html` when the App Store URL is available.
+App Store:
+
+- Product URL: `https://apps.apple.com/app/id6786576853?mt=12`
+- Smart App Banner app id: `6786576853`
