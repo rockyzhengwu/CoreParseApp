@@ -18,3 +18,5 @@ App Store:
 
 - Product URL: `https://apps.apple.com/app/id6786576853?mt=12`
 - Smart App Banner app id: `6786576853`
+
+just test push
