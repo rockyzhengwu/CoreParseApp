@@ -8,6 +8,9 @@
 /*.html
   Cache-Control: public, max-age=300
 
+/articles/*
+  Cache-Control: public, max-age=300
+
 /robots.txt
   Cache-Control: public, max-age=300
 
