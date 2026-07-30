@@ -25,6 +25,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://coreparse.app/articles/batch-ocr-locally-on-mac/</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://coreparse.app/articles/extract-tables-from-pdf-on-mac/</loc>
     <lastmod>2026-07-30</lastmod>
     <changefreq>monthly</changefreq>

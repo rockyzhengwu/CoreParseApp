@@ -24,7 +24,7 @@ date: 2026-07-30
 updated: 2026-07-30
 category: OCR Guides
 tags: OCR, Mac OCR, PDF OCR
-heroImage: /assets/preview-document.jpg
+heroImage: /assets/preview-document.webp
 heroAlt: CoreParse analyzing a scanned document locally on Mac
 ---
 ```

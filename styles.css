@@ -730,6 +730,7 @@ strong {
 .article-content p,
 .article-content ul,
 .article-content blockquote,
+.article-inline-image,
 .article-table-wrap {
   margin: var(--space-lg) 0 0;
 }
@@ -776,6 +777,27 @@ strong {
   padding-left: var(--space-lg);
   border-left: 3px solid var(--color-accent);
   color: var(--color-ink);
+}
+
+.article-inline-image {
+  overflow: clip;
+  border: var(--rule-hair) solid var(--color-rule);
+  border-radius: var(--radius-md);
+  background: var(--color-paper-3);
+  box-shadow: 0 24px 70px -52px var(--color-shadow);
+}
+
+.article-inline-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-inline-image figcaption {
+  padding: var(--space-sm) var(--space-md);
+  border-top: var(--rule-hair) solid var(--color-rule);
+  color: var(--color-ink-3);
+  font-size: var(--text-sm);
 }
 
 .article-table-wrap {

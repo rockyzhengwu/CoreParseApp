@@ -6,7 +6,7 @@ date: 2026-07-30
 updated: 2026-07-30
 category: Table Extraction
 tags: PDF tables, table extraction, Mac OCR, spreadsheets
-heroImage: /assets/preview-table.jpg
+heroImage: /assets/preview-table.webp
 heroAlt: CoreParse showing recognized table cells on a PDF page
 ---
 

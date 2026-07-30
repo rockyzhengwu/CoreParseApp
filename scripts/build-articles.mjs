@@ -5,7 +5,7 @@ const root = process.cwd();
 const contentDir = path.join(root, "content", "articles");
 const outputDir = path.join(root, "articles");
 const siteUrl = "https://coreparse.app";
-const defaultImage = "/assets/preview-document.jpg";
+const defaultImage = "/assets/preview-document.webp";
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -81,6 +81,17 @@ function renderTable(lines) {
     .join("")}</tbody></table></div>`;
 }
 
+function renderImage(line) {
+  const match = line.match(/^!\[([^\]]*)\]\((https?:\/\/[^)\s]+|\/[^)\s]+)(?:\s+"([^"]+)")?\)$/);
+  if (!match) return null;
+
+  const [, alt, src, caption] = match;
+  return `<figure class="article-inline-image">
+    <img src="${escapeAttribute(src)}" alt="${escapeAttribute(alt)}" loading="lazy" decoding="async">
+    ${caption ? `<figcaption>${inlineMarkdown(caption)}</figcaption>` : ""}
+  </figure>`;
+}
+
 function renderMarkdown(markdown) {
   const lines = markdown.replace(/\r\n/g, "\n").split("\n");
   const blocks = [];
@@ -104,6 +115,13 @@ function renderMarkdown(markdown) {
       i += 1;
       const lang = fence[1] ? ` class="language-${escapeAttribute(fence[1])}"` : "";
       blocks.push(`<pre><code${lang}>${escapeHtml(code.join("\n"))}</code></pre>`);
+      continue;
+    }
+
+    const image = renderImage(line.trim());
+    if (image) {
+      blocks.push(image);
+      i += 1;
       continue;
     }
 
@@ -153,7 +171,8 @@ function renderMarkdown(markdown) {
       !/^#{2,3}\s+/.test(lines[i]) &&
       !/^-\s+/.test(lines[i]) &&
       !/^>\s?/.test(lines[i]) &&
-      !/^```/.test(lines[i])
+      !/^```/.test(lines[i]) &&
+      !renderImage(lines[i].trim())
     ) {
       paragraph.push(lines[i].trim());
       i += 1;

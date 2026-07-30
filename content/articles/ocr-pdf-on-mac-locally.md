@@ -6,7 +6,7 @@ date: 2026-07-30
 updated: 2026-07-30
 category: Mac OCR
 tags: PDF OCR, Mac OCR, local OCR, Markdown
-heroImage: /assets/preview-library.jpg
+heroImage: /assets/preview-library.webp
 heroAlt: CoreParse local document library on Mac
 ---
 
